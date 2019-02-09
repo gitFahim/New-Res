@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char*argv[]){
+int main(){
 
 FILE *ptr_bmp_in;
 FILE *ptr_text_out;
