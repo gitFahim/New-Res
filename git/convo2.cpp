@@ -14,7 +14,7 @@ char bytefromtext(unsigned char* text)
     return result;
 }
 
-int main(int argc, char*argv[]){
+int main(){
 
 FILE *ptr_txt_in;
 FILE *ptr_bmp_out;
