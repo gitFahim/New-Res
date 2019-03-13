@@ -6,8 +6,7 @@
 using namespace std;
 
 
-int charToInt(char ch)
-{
+int charToInt(char ch){
 	int iValue = (int) ch;
 	if(iValue<0) iValue +=255;
 	return iValue;
