@@ -124,7 +124,7 @@ int main(){
 
         fread(head, 1, 54, img);
 
-        getDimentions();
+        //getDimentions();
 
         int height = head[18];
         int width = head[22];
