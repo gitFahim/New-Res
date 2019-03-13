@@ -6,8 +6,7 @@ using namespace std;
 
 char ch[512*513];
 
-int main (void)
-{
+int main (void){
 
 	ifstream iFile;
 	iFile.open("lena.bmp", ios::binary);
@@ -15,16 +14,14 @@ int main (void)
 	ofstream oFile;
 	oFile.open("negative.bmp", ios::binary);
 
-	if(iFile.is_open() && oFile.is_open())
-	{
+	if(iFile.is_open() && oFile.is_open()){
 		//unsigned
 		//char ch;
 		//iFile >> ch;
 		int i=0;
 		iFile.get(ch[i]);
 
-		while (!iFile.eof())
-		{
+		while (!iFile.eof()){
 			//oFile << ch;
 			//iFile >> ch;
 			i++;
@@ -34,8 +31,7 @@ int main (void)
 		int size = i+1;
 		cout << size << endl;
 
-		for(int j=0; j<512*512; j++)
-		{
+		for(int j=0; j<512*512; j++){
 			int iValue = (int) ch[i];
 			if(iValue<0) iValue=0;
 			else iValue=255;
@@ -45,16 +41,14 @@ int main (void)
 			i--;
 		}
 
-		for(int k=0; k<size; k++)
-		{
+		for(int k=0; k<size; k++){
 			oFile << ch[k];
 		}
 
 		iFile.close();
 		oFile.close();
 	}
-	else
-	{
+	else{
 		cout << "Could not open file" << endl;
 	}
 	return 0;
