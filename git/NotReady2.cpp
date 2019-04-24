@@ -107,8 +107,8 @@ void countProbabilities() {
                 probImg[0][k][i][j] += (double) binImgSum [0][k][i][j] / sum[0];
                 probImg[1][k][i][j] += (double) binImgSum [1][k][i][j] / sum[1];
             }
-            cout<<sum[0]<<endl;
-            cout<<sum[1]<<endl;
+            //cout<<sum[0]<<endl;
+            //cout<<sum[1]<<endl;
         }
 
     }
